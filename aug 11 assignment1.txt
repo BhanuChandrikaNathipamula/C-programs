@@ -1,16 +1,13 @@
-#include<stdio.h>
-int main (subtract,ProductAndSum(int n))
+public int subtractProductAndSum(int n)
 {
-
-       int sum=0;
-        int product=1;
-        while(n>=0)
-        {
-          sum+=n%10;
-            product*=n%10;
-            n/=10;
-        }
-        return product-sum;
-        
- }
+   int ProductOfDigits=1;
+   int sumOfDigits=0;
+   While (n>0)
+   {
+     int lastDigit=n%10;
+     ProductOfDigits*=lastDigit;
+     sumOfDigits+=lastDigit;
+     n/=10;
+     }
+     return ProductOfDigits - sumOfDigits;
 
